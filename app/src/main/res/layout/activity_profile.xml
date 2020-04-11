@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/bg_profile"
+        android:src="@drawable/profile"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/name_profile"
+        android:text="User Name"
+        android:maxLines="2"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/add_friend"
+        android:textSize="16sp"
+        android:background="@color/colorPrimary"
+        android:text="Add Friend"
+        android:padding="5dp"
+        android:textColor="#fff"
+        android:layout_below="@id/name_profile"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/decline_friend"
+        android:textSize="16sp"
+        android:background="@color/colorPrimary"
+        android:text="Cancel Request"
+        android:padding="5dp"
+        android:textColor="#fff"
+        android:layout_below="@id/add_friend"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="35dp"
+        android:visibility="gone"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>

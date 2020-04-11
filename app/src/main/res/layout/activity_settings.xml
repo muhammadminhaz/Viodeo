@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_profile_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profile"
+        android:layout_marginTop="30dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@id/settings_profile_image"
+        android:id="@+id/username_settings"
+        style="Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        app:startIconDrawable="@drawable/ic_directions_walk_black_24dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:hint="Write your name"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            style="Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@id/username_settings"
+        android:id="@+id/bio_settings"
+        style="Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        app:startIconDrawable="@drawable/ic_featured_play_list_black_24dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:hint="About you"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/bio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            style="Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/save_settings"
+        android:layout_below="@id/bio_settings"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:text="Save"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</RelativeLayout>
